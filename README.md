@@ -17,7 +17,7 @@ Serve this directory with any static HTTP server. No build step or JavaScript is
 
 ## Before release
 
-- Confirm the developer/business name, city, country, and support email.
+- Confirm the developer identity, country, and support email.
 - Confirm the App Store privacy disclosures match the shipped SDK configuration.
 - Have the privacy policy and terms reviewed for the release territories.
 - Update the effective dates whenever the legal text changes materially.
