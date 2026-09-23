@@ -1,0 +1,52 @@
+/* Spitzkoppe Night roles from ThemeColorPolicy.swift. No web dependencies. */
+:root {
+  color-scheme: dark;
+  --night: #070b15;
+  --ivory: #f0e6d2;
+  --graphite: #b8b0a1;
+  --brass: #c5aa78;
+  --rule: #6e685b;
+  --action: #d08a76;
+  --vermilion: #b55943;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  background: var(--night);
+  color: var(--ivory);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: var(--action); text-underline-offset: .25em; text-decoration-thickness: 1px; }
+a:hover { color: var(--ivory); }
+a:focus-visible { outline: 2px solid var(--action); outline-offset: 5px; border-radius: 2px; }
+.site-header, footer { width: min(100% - 48px, 1000px); margin-inline: auto; }
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; min-height: 100px; border-bottom: 1px solid var(--rule); }
+.wordmark { display: inline-flex; align-items: center; gap: 14px; font-family: ui-serif, "New York", Georgia, serif; font-size: 1.2rem; letter-spacing: .07em; color: var(--brass); text-decoration: none; }
+.wordmark span { color: var(--action); font-family: ui-serif, Georgia, serif; font-size: 1.6rem; }
+nav { display: flex; gap: 28px; }
+nav a, footer a, .wordmark { min-height: 44px; display: inline-flex; align-items: center; }
+nav a { color: var(--graphite); text-decoration: none; }
+nav a[aria-current] { color: var(--ivory); text-decoration: underline; text-decoration-color: var(--action); }
+main { max-width: 720px; margin: 0 auto; padding: 64px 24px 80px; }
+.eyebrow { color: var(--brass); text-transform: uppercase; letter-spacing: .17em; font-size: .76rem; margin: 0 0 16px; }
+h1, h2 { font-family: ui-serif, "New York", Georgia, serif; font-weight: 400; line-height: 1.2; text-wrap: balance; }
+h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); letter-spacing: -.035em; margin: 0 0 16px; }
+h2 { font-size: 1.55rem; margin: 0 0 14px; }
+.date { color: var(--graphite); font-size: .85rem; margin: 0 0 32px; }
+.intro { color: var(--ivory); font-size: 1.17rem; margin: 0 0 40px; }
+section { border-top: 1px solid var(--rule); padding-top: 28px; margin-top: 32px; }
+p { margin: 0 0 16px; color: var(--graphite); }
+section p:last-child { margin-bottom: 0; }
+strong { color: var(--ivory); font-weight: 600; }
+main a { overflow-wrap: anywhere; }
+footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 28px 0; border-top: 1px solid var(--rule); font-size: .82rem; }
+footer p { margin: 0; }
+.skip { position: absolute; top: 8px; left: 12px; padding: 10px; background: var(--night); transform: translateY(-160%); }
+.skip:focus { transform: none; }
+@media (max-width: 560px) {
+  .site-header { flex-wrap: wrap; gap: 0; padding-block: 14px; }
+  .wordmark { width: 100%; }
+  nav { gap: 28px; }
+  main { padding-top: 40px; padding-bottom: 52px; }
+  footer { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
